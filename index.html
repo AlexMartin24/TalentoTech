@@ -1,73 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Indumentaria</title>
+    <title>Tienda de Juegos</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-
 </head>
+
 <body>
+
     <header>
-        <div class="container">
-            <h1>Tienda de Indumentaria</h1>
-            <nav>
-                <ul>
-                    <li><a href="#zapatos">Zapatos</a></li>
-                    <li><a href="#mochilas">Mochilas</a></li>
-                    <li><a href="#monederos">Monederos</a></li>
-                </ul>
-            </nav>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" width="200" height="180"></a>
+            <br clear="right">
+        </div>
+
+        <div class="carrito">
+            <a href=""><img src="img/carritodecompras.png" width="40" height="32"></a>
+        </div>
+
+        <div class="categorias" id="categorias">
+            <a href="index.html" class="nav-menu">Inicio</a>
+            <a href="#Nintendo" class="nav-menu">Nintendo</a>
+            <a href="#Sony" class="nav-menu">Sony</a>
         </div>
     </header>
 
-    <div class="container">
-        <section id="zapatos" class="section">
-            <h2>Zapatos para Damas</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Zapato 1">
-                <h3>Zapato Elegante</h3>
-                <p>Descripción breve del producto. Precio: $XXX</p>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Zapato 2">
-                <h3>Zapato Casual</h3>
-                <p>Descripción breve del producto. Precio: $XXX</p>
-            </div>
-        </section>
+    <!-- Imágenes -->
+    <section class="contenedor1">
+        <div class="tituloSeccion">
+            <h3>Nintendo</h3>
+        </div>
 
-        <section id="mochilas" class="mochilas">
-            <h2>Mochilas</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Mochila 1">
-                <h3>Mochila Urbana</h3>
-                <p>Descripción breve del producto. Precio: $XXX</p>
+        <div class="contenedorIma">
+            <div class="imagenes">
+                <div class="centrarimagenes">
+
+                    <div id="Nintendo" class="text">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Nintendo/Luigi_Mansion_2.png">
+                            <h3>Luigi Mansion 2</h3>
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Nintendo/Mario_Party.png">
+                            <h3>Mario Party</h3>
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Nintendo/Pokemon_Let's_Go_Pikachu.png">
+                            <h3>Pokemon Let's Go Pikachu</h3>
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Nintendo/Super_Mario_Paper.webp">
+                            <h3>Super Mario Paper</h3>
+                        </a>
+                    </div>
+
+                </div>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Mochila 2">
-                <h3>Mochila Maternales</h3>
-                <p>Descripción breve del producto. Precio: $XXX</p>
+        </div>
+    </section>
+
+    <section class="contenedor2">
+        <div class="tituloSeccion">
+            <h3>Sony</h3>
+        </div>
+
+        <div class="contenedorIma">
+            <div class="imagenes">
+                <div class="centrarimagenes">
+
+                    <div id="Sony" class="text">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Sony/PS5/F1_24.webp">
+                            <h3>F1 24</h3>
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Sony/PS4/SpiderMan_PS4.webp">
+                            <h3>Spider-Man PS4</h3>
+                        </a>
+                    </div>
+
+                    <div class="text">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Sony/PS5/Elden_Ring.jpg">
+                            <h3>Elden Ring</h3>
+                        </a>
+                    </div>
+
+                </div>
             </div>
-        </section>
-        
-        <section id="monederos" class="monederos">
-            <h2>Monederos</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Monedero 1">
-                <h3>Monedero de Cuero</h3>
-                <p>Descripción breve del producto. Precio: $XXX</p>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Monedero 2">
-                <h3>Monedero Casual</h3>
-                <p>Descripción breve del producto. Precio: $XXX</p>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Tienda de Indumentaria. Todos los derechos reservados.</p>
-    </footer>
+        </div>
+    </section>
+
 </body>
+
+<footer>
+    <p>&copy; 2024 Tienda de Juegos. Todos los derechos reservados.</p>
+</footer>
+</body>
+
 </html>
-
-

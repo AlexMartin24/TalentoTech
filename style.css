@@ -1,54 +1,104 @@
+/* Color fondo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
-    color: white;
+    background-color: #ffffff;
+    margin: 0%;
+  }
+  
+  .container {
+    margin: 0px;
+    margin-top: 10%;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* header */
+  
+  header .categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(147, 177, 235);
+  }
+  
+  header .categorias a {
+    color: black;
+    margin: 5px 5px;
+    font-size: 25px;
+    font-weight: 500;
     text-decoration: none;
-}
-.container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.section {
-    padding: 20px 0;
-}
-.section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-}
-.product {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 15px;
+    padding: 5px;
+    font-family: "Trebuchet MS";
+  }
+  
+  header .categorias :hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+  }
+  
+  /* HEADER carrito */
+  header .carrito {
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    display: flex;
+  }
+  
+  /* / header */
+  
+  /* Contenedor de los productos */
+  .contenedorIma {
+    background-color: #f7e6e7;
+    padding: 10px;
+    width: auto;
+    padding-bottom: 4%;
+  }
+  
+  .quitarSubrayado {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Imagenes horizontal */
+  .centrarimagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  /* Tamaño imagenes de los productos */
+  .imagenes img {
+    margin: 1%;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    position: relative;
+    padding: 1px;
+  }
+  
+  /* Efecto agrandar imagenes de los productos */
+  .centrarimagenes :hover img {
+    transform: scale(1.1);
+    transition-duration: 1s;
+  }
+  
+  /* Tipografia de los productos */
+  .text {
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 20px;
     text-align: center;
-}
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-footer {
-    background-color: #333;
-    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Titulo de la seccion */
+  .tituloSeccion {
     text-align: center;
-    padding: 10px 0;
-}
+    padding: 10px;
+    font-size: 25px;
+    font-family: comic;
+    padding-top: 5%;
+  }
+  
