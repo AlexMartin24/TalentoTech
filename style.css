@@ -105,6 +105,20 @@ footer {
   padding: 20px;
   background-color: #333;
   color: white;
+  font-family: Arial, sans-serif;
+}
+
+footer a {
+  color: #ffffff; /* Color blanco para el enlace */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: #f39c12; /* Color dorado en hover */
+  text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
 
