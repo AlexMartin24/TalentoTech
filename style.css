@@ -1,7 +1,8 @@
-/* Color fondo */
+/* Estilos globales */
 body {
   background-color: #ffffff;
   margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .colorContenedor {
@@ -9,36 +10,44 @@ body {
   padding: 10px 0 4%;
 }
 
+/* Estilos del logo */
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-/* header */
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #a8b2db;
+}
 
+/* Menú de navegación */
 header .categorias {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  background-color: #1f6c89;
 }
 
 header .categorias a {
   color: black;
-  margin: 5px 5px;
-  font-size: 25px;
+  margin: 5px 10px;
+  font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
-  padding: 5px;
-  font-family: "Trebuchet MS";
+  padding: 5px 10px;
+  font-family: "Trebuchet MS", sans-serif;
+  transition: transform 0.3s ease-in-out;
 }
 
-header .categorias :hover {
+header .categorias a:hover {
   transform: scale(1.1);
-  transition-duration: 1s;
 }
 
-/* HEADER carrito */
+/* Estilos del carrito */
 header .carrito {
   position: absolute;
   right: 0;
@@ -46,30 +55,28 @@ header .carrito {
   display: flex;
 }
 
-/* / header */
-
-/* Titulo de la seccion */
+/* Títulos de las secciones */
 .tituloSeccion {
   text-align: center;
-  font-size: 25px;
+  font-size: 2rem;
   font-family: "Courier New", Courier, monospace;
+  /* color: #fff; */
+  margin-bottom: 20px;
 }
 
-/* centrar imagenes de los productos */
+/* Estilos para las imágenes de los juegos */
 .centrarimagenes {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
-/* texto, distancia y tamaño  */
-.textSeccion {
+/* Estilos de los productos */
+.textoSeccion {
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 1.1rem;
   text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-decoration: none;
   color: black;
 }
 
@@ -78,22 +85,153 @@ header .carrito {
   color: black;
 }
 
-/* Tamaño imagenes de los productos */
+/* Estilo de las imágenes dentro de los productos */
 .imagenes img {
-  margin: 1%;
-  width: 300px;
+  margin: 10px;
+  width: 250px;
   height: 300px;
   object-fit: contain;
-  position: relative;
-  padding: 1px;
+  transition: transform 0.5s ease;
 }
 
-/* Efecto agrandar imagenes de los productos */
-.centrarimagenes :hover img {
+/* Efecto hover en las imágenes */
+.centrarimagenes .textoSeccion:hover img {
   transform: scale(1.1);
-  transition-duration: 1s;
 }
 
-.centrarimagenes .text:hover img {
-  transform: scale(1.1);
+/* Estilos del footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+
+
+
+/* ------------------ form.html --------------------- */
+
+/* Estilos globales para el formulario */
+.form-contacto {
+  width: 100%;
+  max-width: 600px; /* Limita el ancho máximo del formulario */
+  margin: 30px auto; /* Centra el formulario y le da un espacio desde arriba */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo suave para el formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para las etiquetas */
+.form-contacto label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333; /* Color oscuro para las etiquetas */
+}
+
+/* Estilos para los campos de entrada de texto */
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%; /* Hace que los campos ocupen todo el ancho disponible */
+  padding: 12px; /* Relleno dentro de los campos */
+  margin-bottom: 15px; /* Espacio entre los campos */
+  font-size: 1rem; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+/* Efecto de enfoque en los campos de entrada */
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  border-color: #2790b0; /* Borde azul cuando el campo está en foco */
+  outline: none; /* Elimina el contorno por defecto */
+}
+
+/* Estilo para el botón de envío */
+.form-contacto button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2790b0; /* Fondo azul */
+  color: white; /* Texto blanco */
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efecto al pasar el ratón */
+}
+
+/* Efecto hover en el botón */
+.form-contacto button:hover {
+  background-color: #1d6f8b; /* Azul más oscuro cuando el cursor está encima */
+}
+
+/* Estilos para el área de texto */
+.form-contacto textarea {
+  resize: vertical; /* Permite que el usuario cambie el tamaño de la caja de texto solo verticalmente */
+}
+
+/* Mensaje de éxito o error (si lo necesitas) */
+.form-contacto .mensaje {
+  font-size: 1rem;
+  color: green;
+  margin-top: 20px;
+}
+
+
+
+
+
+/* ------------------ contact.html --------------------- */
+
+/* Estilo global para la clase confirmacion */
+.confirmacion {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 30px;
+  text-align: center; /* Centra el texto */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para el contenedor */
+  width: 100%;
+  max-width: 500px; /* Limita el ancho máximo de la sección */
+  margin: 100px auto; /* Centra la sección en la página y la separa de los bordes */
+}
+
+/* Estilo para los títulos */
+.confirmacion h3 {
+  font-size: 2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2790b0; /* Azul que combina con el tema */
+  margin-bottom: 10px;
+}
+
+.confirmacion h4 {
+  font-size: 1.2rem;
+  color: #666; /* Gris oscuro para el texto secundario */
+  margin-bottom: 20px;
+}
+
+/* Estilo para el botón de volver */
+.boton-volver {
+  padding: 12px 25px;
+  background-color: #2790b0; /* Azul del tema */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efecto de transición para el hover */
+}
+
+/* Efecto hover en el botón */
+.boton-volver:hover {
+  background-color: #1d6f8b; /* Azul más oscuro cuando se pasa el cursor */
+}
+
+.boton-volver:focus {
+  outline: none; /* Elimina el contorno cuando está enfocado */
 }

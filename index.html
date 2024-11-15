@@ -4,134 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Juegos</title>
+    <title>Game Store</title>
+
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
+<header>
+    <!-- Logo -->
+    <a href="index.html">
+        <img src="img/logo.png" alt="Logo Tienda de Juegos" width="200" height="180">
+    </a>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="carrito">
+            <a href="carrito.html" aria-label="Ver carrito">
+                <img src="img/carritodecompras.png" width="40" height="32" alt="Carrito de compras">
+            </a>
+        </div>
+
+        <div class="categorias" id="categorias">
+            <a href="index.html" class="nav-menu" aria-label="Ir a la página principal">Inicio</a>
+            <a href="#Nintendo" class="nav-menu" aria-label="Ver juegos de Nintendo">Nintendo</a>
+            <a href="#Sony" class="nav-menu" aria-label="Ver juegos de Sony">Sony</a>
+            <a href="contact.html" target="_blank" class="nav-menu" aria-label="Contacto">Contacto</a>
+        </div>
+    </nav>
+</header>
+
 <body>
+    <main>
 
-    <header>
-        <!-- Logo -->
-        <div class="logo">
-            <a href="index.html"><img src="img/logo.jpg" width="200" height="180"></a>
-            <br clear="right">
-        </div>
-
-        <!-- .....MENU..... -->
-        <nav>
-            <div class="carrito">
-                <a href=""><img src="img/carritodecompras.png" width="40" height="32"></a>
-            </div>
-
-            <div class="categorias" id="categorias">
-                <a href="index.html" class="nav-menu">Inicio</a>
-                <a href="#Nintendo" class="nav-menu">Nintendo</a>
-                <a href="#Sony" class="nav-menu">Sony</a>
-            </div>
-        </nav>
-    </header>
-
-    <section id="Nintendo" class="contenedor1">
-        <h3 class="tituloSeccion">Nintendo</h3>
-        <div class="colorContenedor">
-            <div class="imagenes centrarimagenes">
-                <div class="textSeccion">
-                    <a class="quitarSubrayado" href="">
-                        <img src="img/Juegos/Nintendo/Luigi_Mansion_2.png" alt="Luigi Mansion 2">
-                        <h3>Luigi Mansion 2</h3>
-                    </a>
-                </div>
-                <div class="textSeccion">
-                    <a class="quitarSubrayado" href="">
-                        <img src="img/Juegos/Nintendo/Mario_Party.png" alt="Mario Party">
-                        <h3>Mario Party</h3>
-                    </a>
-                </div>
-                <div class="textSeccion">
-                    <a class="quitarSubrayado" href="">
-                        <img src="img/Juegos/Nintendo/Pokemon_Let's_Go_Pikachu.png" alt="Pokemon Let's Go Pikachu">
-                        <h3>Pokemon Let's Go Pikachu</h3>
-                    </a>
-                </div>
-                <div class="textSeccion">
-                    <a class="quitarSubrayado" href="">
-                        <img src="img/Juegos/Nintendo/Super_Mario_Paper.webp" alt="Super Mario Paper">
-                        <h3>Super Mario Paper</h3>
-                    </a>
+        <!-- Sección de juegos Nintendo -->
+        <section id="Nintendo" class="contenedor1">
+            <h3 class="tituloSeccion">Nintendo</h3>
+            <div class="colorContenedor">
+                <div class="imagenes centrarimagenes">
+                    <div class="textoSeccion">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Nintendo/Luigi_Mansion_2.png" alt="Luigi Mansion 2">
+                            <h3>Luigi Mansion 2</h3>
+                        </a>
+                    </div>
+                    <div class="textoSeccion">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Nintendo/Mario_Party.png" alt="Mario Party">
+                            <h3>Mario Party</h3>
+                        </a>
+                    </div>
+                    <div class="textoSeccion">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Nintendo/Pokemon_Let's_Go_Pikachu.png" alt="Pokemon Let's Go Pikachu">
+                            <h3>Pokemon Let's Go Pikachu</h3>
+                        </a>
+                    </div>
+                    <div class="textoSeccion">
+                        <a class="quitarSubrayado" href="">
+                            <img src="img/Juegos/Nintendo/Super_Mario_Paper.webp" alt="Super Mario Paper">
+                            <h3>Super Mario Paper</h3>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="Sony" class="contenedor2">
-        <h3 class="tituloSeccion">Sony</h3>
-        <div class="colorContenedor">
-            <div class="imagenes">
-                <div class="centrarimagenes">
-
-                    <div class="textSeccion">
-                        <a class="quitarSubrayado" href="">
-                            <img src="img/Juegos/Sony/PS4/HITMAN_2.jfif">
-                            <h3>F1 24</h3>
-                        </a>
+        <!-- Sección de juegos Sony -->
+        <section id="Sony" class="contenedor2">
+            <h3 class="tituloSeccion">Sony</h3>
+            <div class="colorContenedor">
+                <div class="imagenes">
+                    <div class="centrarimagenes">
+                        <div class="textoSeccion">
+                            <a class="quitarSubrayado" href="">
+                                <img src="img/Juegos/Sony/PS4/HITMAN_2.jfif" alt="Hitman 2">
+                                <h3>Hitman 2</h3>
+                            </a>
+                        </div>
+                        <div class="textoSeccion">
+                            <a class="quitarSubrayado" href="">
+                                <img src="img/Juegos/Sony/PS4/DOOM.jfif" alt="Doom">
+                                <h3>Doom</h3>
+                            </a>
+                        </div>
+                        <div class="textoSeccion">
+                            <a class="quitarSubrayado" href="">
+                                <img src="img/Juegos/Sony/PS4/CALL_OF_DUTY_BLACK_OPS_COLD_WAR.jfif"
+                                    alt="COD Black Ops Cold War">
+                                <h3>COD Black Ops Cold War</h3>
+                            </a>
+                        </div>
+                        <div class="textoSeccion">
+                            <a class="quitarSubrayado" href="">
+                                <img src="img/Juegos/Sony/PS4/PLANTS_VS_ZOMBIES_GARDEN_WARFARE.jfif"
+                                    alt="Plants VS Zombies Warfare">
+                                <h3>Plants VS Zombies Warfare</h3>
+                            </a>
+                        </div>
+                        <div class="textoSeccion">
+                            <a class="quitarSubrayado" href="">
+                                <img src="img/Juegos/Sony/PS4/STREET_FIGHTER_V.jfif" alt="Street Fighter V">
+                                <h3>Street Fighter V</h3>
+                            </a>
+                        </div>
+                        <div class="textoSeccion">
+                            <a class="quitarSubrayado" href="">
+                                <img src="img/Juegos/Sony/PS4/Red_Dead_Redemption_II.jfif" alt="Red Dead Redemption II">
+                                <h3>Red Dead Redemption II</h3>
+                            </a>
+                        </div>
+                        <div class="textoSeccion">
+                            <a class="quitarSubrayado" href="">
+                                <img src="img/Juegos/Sony/PS4/Sonic_Mania.jpg" alt="Sonic Mania">
+                                <h3>Sonic Mania</h3>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="textSeccion">
-                        <a class="quitarSubrayado" href="">
-                            <img src="img/Juegos/Sony/PS4/DOOM.jfif">
-                            <h3>Spider-Man PS4</h3>
-                        </a>
-                    </div>
-
-                    <div class="textSeccion">
-                        <a class="quitarSubrayado" href="">
-                            <img src="img/Juegos/Sony/PS4/CALL_OF_DUTY_BLACK_OPS_COLD_WAR.jfif">
-                            <h3>CALL OF DUTY BLACK OPS COLD WAR</h3>
-                        </a>
-                    </div>
-
-                    <div class="textSeccion">
-                        <a class="quitarSubrayado" href="">
-                            <img src="img/Juegos/Sony/PS4/PLANTS_VS_ZOMBIES_GARDEN_WARFARE.jfif">
-                            <h3>PLANTS VS ZOMBIES GARDEN WARFARE</h3>
-                        </a>
-                    </div>
-
-                    <div class="textSeccion">
-                        <a class="quitarSubrayado" href="">
-                            <img src="img/Juegos/Sony/PS4/STREET_FIGHTER_V.jfif">
-                            <h3>STREET FIGHTER V</h3>
-                        </a>
-                    </div>
-
-                    <div class="textSeccion">
-                        <a class="quitarSubrayado" href="">
-                            <img src="img/Juegos/Sony/PS4/Red_Dead_Redemption_II.jfif">
-                            <h3>Red Dead Redemption II</h3>
-                        </a>
-                    </div>
-
-
-                    <div class="textSeccion">
-                        <a class="quitarSubrayado" href="">
-                            <img src="img/Juegos/Sony/PS4/Sonic_Mania.jpg">
-                            <h3>Sonic Mania</h3>
-                        </a>
-                    </div>
-
-
-
-
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
 </body>
 
-<footer>
-    <p>&copy; 2024 Tienda de Juegos. Todos los derechos reservados.</p>
-</footer>
-</body>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tienda de Juegos. Todos los derechos reservados.</p>
+    </footer>
+
 
 </html>
