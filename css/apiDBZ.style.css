@@ -1,0 +1,43 @@
+/* --------------API DBZ------------------- */
+#listaDePersonajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.cardPersonajes {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  height: fit-content;
+}
+
+.cardPersonajes h1 {
+  color: #666;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.cardPersonajes h2 {
+  color: #666;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.cardPersonajes img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* -------------------------------------------- */

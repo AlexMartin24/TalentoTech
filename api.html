@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Ball API</title>
+    <link href="css/apiDBZ.style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/page.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+    <script>
+      // Llamar a la función header
+      agregarHeader();
+    </script>
+    <!-- ----- -->
+
+    <main>
+      <section class="DBZ">
+        <h1 class="tituloSeccion">Personajes de Dragon Ball</h1>
+        <div id="listaDePersonajes"></div>
+
+        <!-- <script src="script.js"></script> -->
+        <script src="js/script.js">
+          apiDragonBall()
+        </script>
+      </section>
+    </main>
+    
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+      agregarFooter();
+    </script>
+    <!-- ----- -->
+  </body>
+</html>
