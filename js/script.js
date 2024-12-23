@@ -6,34 +6,40 @@ function apiDragonBall() {
     //en datos, está la estructura en formato objeto
     .then((datos) => {
       console.log(datos.items[0]);
-      const container = document.getElementById("listaDePersonajes");
+      // listaDePersonajes es el contenedor donde se agregarán las tarjetas de los personajes
+      let contenedorPersonajes = document.getElementById("listaDePersonajes");
 
-      datos.items.forEach((element) => {
-        // console.log(element.name, element.race, element.image);
+      datos.items.forEach((elemento) => {
+        // console.log(elemento.name, elemento.race, elemento.image);
 
-        // card por cada personaje
-        const cardPersonajes = `
-            <div class="cardPersonajes">
-                <h2>${element.name} (${element.race})</h2>
-                <img src="${element.image}" alt="${element.name}">
-                <p><strong>Afiliación:</strong> ${element.affiliation || 'Desconocido'}</p>
-                <p><strong>Género:</strong> ${element.gender}</p>
-                <p><strong>Ki:</strong> ${element.ki}</p>
-                <p><strong>Máximo Ki:</strong> ${element.maxKi}</p>
-                <p><strong>Descripción:</strong> ${element.description || 'No disponible'}</p>
-            </div>
+        // Crear el div contenedor para cada personaje
+        const contenedorCreado = document.createElement("div");
+
+        // Agrega la clase cardPersonajes al div 
+        contenedorCreado.classList.add("cardPersonajes");
+
+        // agregar el contenido a ese div
+        contenedorCreado.innerHTML = `
+            <h2>${elemento.name} (${elemento.race})</h2>
+            <img src="${elemento.image}" alt="${elemento.name}">
+            <p><strong>Afiliación:</strong> ${
+              elemento.affiliation || "Desconocido"
+            }</p>
+            <p><strong>Género:</strong> ${elemento.gender}</p>
+            <p><strong>Ki:</strong> ${elemento.ki}</p>
+            <p><strong>Máximo Ki:</strong> ${elemento.maxKi}</p>
+            <p><strong>Descripción:</strong> ${
+              elemento.description || "No disponible"
+            }</p>
         `;
-        // agregar la card al contenedor
-        container.innerHTML += cardPersonajes;
+        // agrega la tarjeta al contenedor, contenedorPersonajes en la página
+        contenedorPersonajes.append(contenedorCreado);
+      });
     });
-});
 }
 
 // llama a la función cuando cargue la página
 window.onload = apiDragonBall;
-
-
-
 
 // Declaración de la función "saludar"
 

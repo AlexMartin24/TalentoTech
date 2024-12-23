@@ -15,27 +15,32 @@
       rel="stylesheet"
     />
 
-    <!-- <script src="script.js"></script> -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="js/carrito.js"></script>
   </head>
 
   <body>
     <header>
       <!-- Logo -->
-      <a href="index.html">
-        <img
-          src="img/logo.png"
-          alt="Logo Tienda de Juegos"
-          width="200"
-          height="180"
-        />
-      </a>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="img/logo.png"
+            alt="Logo Tienda de Juegos"
+            width="200"
+            height="180"
+          />
+        </a>
+      </div>
 
       <!-- Menú de navegación -->
       <nav>
         <div class="carrito">
-          <a href=""
-            ><img src="img/carritodecompras.png" width="40" height="32"
-          /></a>
+          <a href="#carrito"><img src="img/carritodecompras.png" width="40" height="32" /></a>
         </div>
 
         <div class="categorias" id="categorias">
@@ -61,7 +66,6 @@
             aria-label="Contacto"
             >Contacto</a
           >
-
           <a
             href="api.html"
             target="_blank"
@@ -74,119 +78,53 @@
     </header>
 
     <main>
-      <!-- Sección de juegos Nintendo -->
       <section id="Nintendo" class="contenedor1">
         <h3 class="tituloSeccion">Nintendo</h3>
         <div class="colorContenedor">
-          <div class="imagenes centrarimagenes">
-            <div class="textoSeccion">
-              <a class="quitarSubrayado" href="">
-                <img
-                  src="img/Juegos/Nintendo/Luigi_Mansion_2.png"
-                  alt="Luigi Mansion 2"
-                />
-                <h3>Luigi Mansion 2</h3>
-              </a>
-            </div>
-            <div class="textoSeccion">
-              <a class="quitarSubrayado" href="">
-                <img
-                  src="img/Juegos/Nintendo/Mario_Party.png"
-                  alt="Mario Party"
-                />
-                <h3>Mario Party</h3>
-              </a>
-            </div>
-            <div class="textoSeccion">
-              <a class="quitarSubrayado" href="">
-                <img
-                  src="img/Juegos/Nintendo/Pokemon_Let's_Go_Pikachu.png"
-                  alt="Pokemon Let's Go Pikachu"
-                />
-                <h3>Pokemon Let's Go Pikachu</h3>
-              </a>
-            </div>
-            <div class="textoSeccion">
-              <a class="quitarSubrayado" href="">
-                <img
-                  src="img/Juegos/Nintendo/Super_Mario_Paper.webp"
-                  alt="Super Mario Paper"
-                />
-                <h3>Super Mario Paper</h3>
-              </a>
-            </div>
+          <div class="imagenes centrarimagenes" id="listaDeProductosNintendo">
+            <!-- productos de nintendo -->
           </div>
         </div>
       </section>
 
-      <!-- Sección de juegos Sony -->
       <section id="Sony" class="contenedor2">
         <h3 class="tituloSeccion">Sony</h3>
         <div class="colorContenedor">
-          <div class="imagenes">
-            <div class="centrarimagenes">
-              <div class="textoSeccion">
-                <a class="quitarSubrayado" href="">
-                  <img src="img/Juegos/Sony/PS4/HITMAN_2.jfif" alt="Hitman 2" />
-                  <h3>Hitman 2</h3>
-                </a>
-              </div>
-              <div class="textoSeccion">
-                <a class="quitarSubrayado" href="">
-                  <img src="img/Juegos/Sony/PS4/DOOM.jfif" alt="Doom" />
-                  <h3>Doom</h3>
-                </a>
-              </div>
-              <div class="textoSeccion">
-                <a class="quitarSubrayado" href="">
-                  <img
-                    src="img/Juegos/Sony/PS4/CALL_OF_DUTY_BLACK_OPS_COLD_WAR.jfif"
-                    alt="COD Black Ops Cold War"
-                  />
-                  <h3>COD Black Ops Cold War</h3>
-                </a>
-              </div>
-              <div class="textoSeccion">
-                <a class="quitarSubrayado" href="">
-                  <img
-                    src="img/Juegos/Sony/PS4/PLANTS_VS_ZOMBIES_GARDEN_WARFARE.jfif"
-                    alt="Plants VS Zombies Warfare"
-                  />
-                  <h3>Plants VS Zombies Warfare</h3>
-                </a>
-              </div>
-              <div class="textoSeccion">
-                <a class="quitarSubrayado" href="">
-                  <img
-                    src="img/Juegos/Sony/PS4/STREET_FIGHTER_V.jfif"
-                    alt="Street Fighter V"
-                  />
-                  <h3>Street Fighter V</h3>
-                </a>
-              </div>
-              <div class="textoSeccion">
-                <a class="quitarSubrayado" href="">
-                  <img
-                    src="img/Juegos/Sony/PS4/Red_Dead_Redemption_II.jfif"
-                    alt="Red Dead Redemption II"
-                  />
-                  <h3>Red Dead Redemption II</h3>
-                </a>
-              </div>
-              <div class="textoSeccion">
-                <a class="quitarSubrayado" href="">
-                  <img
-                    src="img/Juegos/Sony/PS4/Sonic_Mania.jpg"
-                    alt="Sonic Mania"
-                  />
-                  <h3>Sonic Mania</h3>
-                </a>
-              </div>
-            </div>
+          <div class="imagenes centrarimagenes" id="listaDeProductosSony">
+            <!-- productos de Sony -->
           </div>
         </div>
       </section>
     </main>
+
+    <!-- Carrito -->
+    <section id="carrito">
+      <h3>Carrito de Compras</h3>
+      <div class="table-responsive-sm">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody id="tablaCarrito">
+            <!-- productos del carrito-->
+          </tbody>
+        </table>
+      </div>
+
+      <p>Total: $<span id="total">0</span></p>
+
+      <button type="button" class="btn btn-primary" onclick="comprar()">
+        Comprar
+      </button>
+      <button type="button" class="btn btn-danger" >
+        Cancelar
+      </button>
+
+    </section>
 
     <!-- Footer -->
     <footer>
