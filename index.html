@@ -6,6 +6,8 @@
     <title>Game Store</title>
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/page.style.css" rel="stylesheet" type="text/css" />
+
 
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,7 +42,9 @@
       <!-- Menú de navegación -->
       <nav>
         <div class="carrito">
-          <a href="#carrito"><img src="img/carritodecompras.png" width="40" height="32" /></a>
+          <a href="#carrito"
+            ><img src="img/carritodecompras.png" width="40" height="32"
+          /></a>
         </div>
 
         <div class="categorias" id="categorias">
@@ -100,32 +104,23 @@
     <!-- Carrito -->
     <section id="carrito">
       <h3>Carrito de Compras</h3>
-      <div class="table-responsive-sm">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Producto</th>
-              <th>Precio</th>
-              <th>Cantidad</th>
-            </tr>
-          </thead>
-          <tbody id="tablaCarrito">
-            <!-- productos del carrito-->
-          </tbody>
-        </table>
+      <div class="carrito-grid">
+        <div class="carrito-header">
+          <div>Producto</div>
+          <div>Precio</div>
+          <div>Cantidad</div>
+        </div>
+        <div id="tablaCarrito">
+          <!-- Aquí se agregarán los productos -->
+        </div>
       </div>
-
       <p>Total: $<span id="total">0</span></p>
-
-      <button type="button" class="btn btn-primary" onclick="comprar()">
-        Comprar
-      </button>
-      <button type="button" class="btn btn-danger" >
-        Cancelar
-      </button>
-
+      <button type="button" class="btn btn-primary" onclick="comprar()">Comprar</button>
+      <a href="">
+        <button type="button" class="btn btn-danger">Cancelar</button>
+      </a>
     </section>
-
+        
     <!-- Footer -->
     <footer>
       <p>&copy; 2024 Tienda de Juegos. Todos los derechos reservados.</p>

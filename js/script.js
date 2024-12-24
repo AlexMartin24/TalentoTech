@@ -41,15 +41,16 @@ function apiDragonBall() {
 // llama a la función cuando cargue la página
 window.onload = apiDragonBall;
 
-// Declaración de la función "saludar"
 
-function saludar() {
-  var nombre = prompt("Ingrese su nombre", "");
 
-  document.write("Hola " + nombre);
-  console.log("Hola " + nombre);
 
-  for (i = 1; i <= 10; i++) {
-    console.log("1 x", i, "=", 5 * i);
-  }
-}
+// function saludar() {
+//   var nombre = prompt("Ingrese su nombre", "");
+
+//   document.write("Hola " + nombre);
+//   console.log("Hola " + nombre);
+
+//   for (i = 1; i <= 10; i++) {
+//     console.log("1 x", i, "=", 5 * i);
+//   }
+// }

@@ -1,3 +1,9 @@
+// Funciones Modulares
+// 1. Crear de una función que cree un array de
+// productos y los muestre en la página utilizando
+// una plantilla HTML dinámica.
+
+
 let listaDeProductos = [
   {
     id: "P1",
@@ -59,32 +65,30 @@ let listaDeProductos = [
 ];
 
 function cargarProductos(categoria) {
+  // Filtra los productos según la categoría
   const productos = listaDeProductos.filter(
     (producto) => producto.categoria === categoria
   );
   console.log(productos);
 
   // Obtiene el contenedor donde se agregarán los productos
-  const contenedorProductos = document.getElementById(
-    "listaDeProductos" + categoria
-  );
+  const contenedorProductos = document.getElementById("listaDeProductos" + categoria);
 
   // Itera sobre los productos y los agrega al contenedor
   productos.forEach((producto) => {
     // Crear el div contenedor para cada producto
     const contenedorCreado = document.createElement("div");
-    // Clase para cada producto
-    contenedorCreado.classList.add("textoSeccion");
+    contenedorCreado.classList.add("producto-item");
 
     // Llenar el contenedor con los datos del producto
     contenedorCreado.innerHTML = `
       <div class="producto">
-          <img src="${producto.imagen}" alt="${producto.nombre}" />
-          <h3>${producto.nombre}</h3>
-          <p class="precio">$${producto.precio}</p>
-          <button class="agregarCarrito" onclick="agregarAlCarrito('${producto.nombre}', ${producto.precio})">
-            Agregar al carrito
-          </button>
+        <img src="${producto.imagen}" alt="${producto.nombre}" />
+        <h3>${producto.nombre}</h3>
+        <p class="precio">$${producto.precio}</p>
+        <button class="agregarCarrito" onclick="agregarAlCarrito('${producto.nombre}', ${producto.precio})">
+          Agregar al carrito
+        </button>
       </div>
     `;
 
@@ -92,6 +96,7 @@ function cargarProductos(categoria) {
     contenedorProductos.appendChild(contenedorCreado);
   });
 }
+
 
 // Ejecutar la función al cargar la página
 window.onload = function () {
@@ -138,10 +143,6 @@ function actualizarCarrito() {
 }
 
 function comprar() {
-  alert("Pagina en desarrollo");
-}
-
-function cancelar() {
   alert("Pagina en desarrollo");
 }
 

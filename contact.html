@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-</head>
+    <link href="css/style.contact.css" rel="stylesheet" type="text/css" />
+    <link href="css/page.style.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
+    <script src="js/page.js"></script>
+  </head>
 
-
-<body>
-    <header>
-        <!-- Logo -->
-        <a href="index.html">
-            <img src="img/logo.png" alt="Logo Tienda de Juegos" width="200" height="180">
-        </a>
-
-        <!-- Menú de navegación -->
-        <nav>
-            <div class="carrito">
-                <a href=""><img src="img/carritodecompras.png" width="40" height="32"></a>
-            </div>
-
-            <div class="categorias" id="categorias">
-                <a href="index.html" class="nav-menu" aria-label="Ir a la página principal">Inicio</a>
-                <a href="contact.html" class="nav-menu" aria-label="Contacto">Contacto</a>
-            </div>
-        </nav>
-    </header>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+    <script>
+      agregarHeader();
+    </script>
+    <!-- ----- -->
 
     <main>
-        <form action="form.html" method="GET" class="form-contacto">
-            <h3>Contactanos:</h3>
+      <form action="form.html" method="GET" class="form-contacto">
+        <h3>Contactanos:</h3>
 
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required="" placeholder="Juan">
-            <br><br>
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required=""
+          placeholder="Juan"
+        />
+        <br /><br />
 
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" name="apellido" required="" placeholder="Ramírez">
-            <br><br>
+        <label for="apellido">Apellido</label>
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          required=""
+          placeholder="Ramírez"
+        />
+        <br /><br />
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required="" placeholder="jramirez@gmail.com">
-            <br><br>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required=""
+          placeholder="jramirez@gmail.com"
+        />
+        <br /><br />
 
-            <label for="mensaje">Envianos tu consulta!</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required=""></textarea>
-            <br><br>
+        <label for="mensaje">Envianos tu consulta!</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required=""></textarea>
+        <br /><br />
 
-            <button type="submit">Enviar</button>
-        </form>
-
+        <button type="submit">Enviar</button>
+      </form>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Tienda de Juegos. Todos los derechos reservados.</p>
-        <a href="location.html" class="nav-menu" aria-label="ubicacion">Donde encontrarnos</a>
-    </footer>
-</body>
-
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+      agregarFooter();
+    </script>
+    <!-- ----- -->
+  </body>
 </html>

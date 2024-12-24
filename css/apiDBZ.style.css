@@ -1,9 +1,8 @@
-/* --------------API DBZ------------------- */
 #listaDePersonajes {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 20px; /* Espacio entre las tarjetas */
+  gap: 20px;
 }
 
 .cardPersonajes {
@@ -39,5 +38,3 @@
   object-fit: contain;
   border-radius: 10px;
 }
-
-/* -------------------------------------------- */
